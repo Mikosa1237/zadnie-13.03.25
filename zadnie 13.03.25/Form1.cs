@@ -17,12 +17,22 @@ namespace zadnie_13._03._25
             InitializeComponent();
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void but_komp_Click(object sender, EventArgs e)
         {
 
         }
 
-        private void label1_Click(object sender, EventArgs e)
+        private void but_mon_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void but_cena_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void but_suma_TextChanged(object sender, EventArgs e)
         {
 
         }

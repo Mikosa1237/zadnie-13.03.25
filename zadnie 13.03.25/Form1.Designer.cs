@@ -28,56 +28,59 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
+            this.but_komp = new System.Windows.Forms.Button();
+            this.but_mon = new System.Windows.Forms.Button();
+            this.but_suma = new System.Windows.Forms.TextBox();
+            this.but_cena = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
-            // button1
+            // but_komp
             // 
-            this.button1.Location = new System.Drawing.Point(177, 154);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "komputer";
-            this.button1.UseVisualStyleBackColor = true;
+            this.but_komp.Location = new System.Drawing.Point(199, 140);
+            this.but_komp.Name = "but_komp";
+            this.but_komp.Size = new System.Drawing.Size(112, 23);
+            this.but_komp.TabIndex = 0;
+            this.but_komp.Text = "Komputer";
+            this.but_komp.UseVisualStyleBackColor = true;
+            this.but_komp.Click += new System.EventHandler(this.but_komp_Click);
             // 
-            // button2
+            // but_mon
             // 
-            this.button2.Location = new System.Drawing.Point(307, 154);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 23);
-            this.button2.TabIndex = 1;
-            this.button2.Text = "monitor";
-            this.button2.UseVisualStyleBackColor = true;
+            this.but_mon.Location = new System.Drawing.Point(339, 140);
+            this.but_mon.Name = "but_mon";
+            this.but_mon.Size = new System.Drawing.Size(112, 23);
+            this.but_mon.TabIndex = 1;
+            this.but_mon.Text = "Monitor";
+            this.but_mon.UseVisualStyleBackColor = true;
+            this.but_mon.Click += new System.EventHandler(this.but_mon_Click);
             // 
-            // textBox1
+            // but_suma
             // 
-            this.textBox1.Location = new System.Drawing.Point(483, 155);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 22);
-            this.textBox1.TabIndex = 2;
+            this.but_suma.Location = new System.Drawing.Point(489, 141);
+            this.but_suma.Name = "but_suma";
+            this.but_suma.Size = new System.Drawing.Size(100, 22);
+            this.but_suma.TabIndex = 2;
+            this.but_suma.TextChanged += new System.EventHandler(this.but_suma_TextChanged);
             // 
-            // label1
+            // but_cena
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(512, 120);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(52, 16);
-            this.label1.TabIndex = 3;
-            this.label1.Text = "cena zł";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
+            this.but_cena.AutoSize = true;
+            this.but_cena.Location = new System.Drawing.Point(507, 97);
+            this.but_cena.Name = "but_cena";
+            this.but_cena.Size = new System.Drawing.Size(52, 16);
+            this.but_cena.TabIndex = 3;
+            this.but_cena.Text = "cena zł";
+            this.but_cena.Click += new System.EventHandler(this.but_cena_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.but_cena);
+            this.Controls.Add(this.but_suma);
+            this.Controls.Add(this.but_mon);
+            this.Controls.Add(this.but_komp);
             this.Name = "Form1";
             this.Text = "Form1";
             this.ResumeLayout(false);
@@ -87,10 +90,10 @@
 
         #endregion
 
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button but_komp;
+        private System.Windows.Forms.Button but_mon;
+        private System.Windows.Forms.TextBox but_suma;
+        private System.Windows.Forms.Label but_cena;
     }
 }
 
