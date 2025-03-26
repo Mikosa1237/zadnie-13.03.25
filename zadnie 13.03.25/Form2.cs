@@ -5,7 +5,7 @@ namespace zadnie_13._03._25
 {
     public partial class Form2 : Form
     {
-        private decimal basePrice = 1000;
+        private decimal basePrice = 0;
         private decimal processorPrice = 0;
         private decimal diskPrice = 0;
 
